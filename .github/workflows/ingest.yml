@@ -1,0 +1,61 @@
+name: RAG Ingestion Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      prefix:
+        description: "S3 prefix to ingest (leave blank for full bucket)"
+        required: false
+        default: ""
+      key:
+        description: "Single S3 key to ingest (leave blank for full/prefix ingest)"
+        required: false
+        default: ""
+      reingest:
+        description: "Re-ingest (delete stale vectors first)?"
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  ingest:
+    name: Run Ingestion Pipeline
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run ingestion
+        env:
+          GEMINI_API_KEY:        ${{ secrets.GEMINI_API_KEY }}
+          AWS_ACCESS_KEY_ID:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION:            ${{ secrets.AWS_REGION }}
+          S3_BUCKET_NAME:        ${{ secrets.S3_BUCKET_NAME }}
+          QDRANT_URL:            ${{ secrets.QDRANT_URL }}
+          QDRANT_API_KEY:        ${{ secrets.QDRANT_API_KEY }}
+          QDRANT_COLLECTION:     ${{ secrets.QDRANT_COLLECTION }}
+        run: |
+          ARGS=""
+
+          if [ -n "${{ github.event.inputs.key }}" ]; then
+            ARGS="--key ${{ github.event.inputs.key }}"
+          elif [ -n "${{ github.event.inputs.prefix }}" ]; then
+            ARGS="--prefix ${{ github.event.inputs.prefix }}"
+          fi
+
+          if [ "${{ github.event.inputs.reingest }}" = "true" ]; then
+            ARGS="$ARGS --reingest"
+          fi
+
+          echo "Running: python run_ingest.py $ARGS"
+          python run_ingest.py $ARGS

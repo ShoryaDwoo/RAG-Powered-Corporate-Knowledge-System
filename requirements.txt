@@ -1,0 +1,31 @@
+# Core
+fastapi
+uvicorn[standard]
+pydantic
+
+# Google Gemini (embeddings)
+google-generativeai>=0.7.0
+
+langchain
+langchain-google-genai
+langchain_text_splitters
+sentence-transformers
+google-generativeai
+# OpenAI (generator — remove if you switch generation to Gemini too)
+openai>=1.0.0
+
+# Vector store
+qdrant-client>=1.9.0
+typing
+# AWS
+boto3
+
+# Retry
+tenacity
+loguru
+# Chunking / parsing
+Path
+pdfplumber
+pandas
+openpyxl
+python-dotenv

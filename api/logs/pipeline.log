@@ -1,0 +1,128 @@
+2026-10-13 12:06:48.349 | INFO     | api:query:63 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the leave policy?'
+2026-10-13 12:06:48.406 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:11:13.455 | INFO     | api:query:63 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the leave policy?'
+2026-10-13 12:11:13.479 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:11:32.069 | INFO     | api:query:63 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the leave policy?'
+2026-10-13 12:11:32.121 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:16:32.393 | INFO     | api:query:63 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the leave policy?'
+2026-10-13 12:16:32.444 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:20:13.789 | INFO     | api:query:63 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the leave policy?'
+2026-10-13 12:20:13.841 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:22:54.388 | INFO     | api:query:63 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the leave policy?'
+2026-10-13 12:22:54.414 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:22:55.354 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 12:22:55.355 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-1.5-flash
+2026-10-13 12:25:13.132 | INFO     | api:query:63 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the leave policy?'
+2026-10-13 12:25:13.157 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:25:13.716 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 12:25:13.717 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 12:25:40.114 | INFO     | retrieval.generator:generate_answer:79 - Generated answer (63 chars)
+2026-10-13 12:27:44.787 | INFO     | api:query:63 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 12:27:44.810 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:27:45.476 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 12:27:45.477 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 12:28:23.459 | INFO     | retrieval.generator:generate_answer:79 - Generated answer (63 chars)
+2026-10-13 12:50:30.521 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 12:50:30.547 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:50:31.177 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 12:50:31.177 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:50:31.177 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:50:31.178 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:50:31.178 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:50:31.178 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:52:17.630 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 12:52:17.656 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:52:18.290 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 12:52:18.291 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:52:18.292 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:52:18.292 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:52:18.292 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:52:18.292 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:52:49.121 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 12:52:49.149 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:52:49.699 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 12:52:49.700 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:52:49.701 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:52:49.701 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:52:49.701 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:52:49.701 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:52:49.701 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 12:52:55.135 | INFO     | retrieval.generator:generate_answer:79 - Generated answer (63 chars)
+2026-10-13 12:55:36.730 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 12:55:36.756 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:55:37.234 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 12:55:37.235 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:55:37.235 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:55:37.235 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:55:37.235 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:55:37.235 | INFO     | api:query:70 - Retrieved #%s | score=%.4f | source=%s | text=%s
+2026-10-13 12:55:37.235 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 12:55:49.618 | INFO     | retrieval.generator:generate_answer:79 - Generated answer (63 chars)
+2026-10-13 12:57:21.712 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 12:57:21.750 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 12:57:22.258 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 12:57:22.259 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 12:57:30.197 | INFO     | retrieval.generator:generate_answer:79 - Generated answer (63 chars)
+2026-10-13 13:48:48.499 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 13:48:48.525 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 13:48:49.067 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 13:48:49.068 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 13:51:04.711 | INFO     | retrieval.generator:generate_answer:79 - Generated answer (63 chars)
+2026-10-13 14:01:15.783 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 14:01:15.809 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 14:01:16.305 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 14:01:16.306 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 14:45:29.830 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 14:45:29.863 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 14:49:48.208 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 14:49:48.239 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 14:49:48.260 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 14:49:48.261 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 14:51:49.412 | INFO     | retrieval.generator:generate_answer:79 - Generated answer (111 chars)
+2026-10-13 14:55:07.538 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 14:55:07.567 | DEBUG    | retrieval.retriever:search:66 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 14:55:07.585 | INFO     | retrieval.retriever:search:112 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 14:55:07.585 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 14:59:38.616 | INFO     | retrieval.generator:generate_answer:79 - Generated answer (103 chars)
+2026-10-13 15:05:13.719 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-13 15:05:13.754 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 15:05:13.776 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 15:05:13.777 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 15:14:41.411 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='whom should i get approval for international travel?'
+2026-10-13 15:14:41.445 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 15:14:41.462 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 15:14:41.463 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 15:18:14.264 | INFO     | retrieval.generator:generate_answer:79 - Generated answer (507 chars)
+2026-10-13 15:21:03.116 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='i want to connect for it helpdesk.'
+2026-10-13 15:21:03.150 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 15:21:03.166 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 15:21:03.167 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 15:23:36.585 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='what are my number of casual leave. '
+2026-10-13 15:23:36.619 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 15:23:36.633 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 15:23:36.634 | DEBUG    | retrieval.generator:generate_answer:63 - Sending 5 context chunks to gemini-3.8-flash
+2026-10-13 16:29:11.023 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is my number of casual leaves?'
+2026-10-13 16:29:11.052 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 16:29:11.073 | INFO     | retrieval.retriever:search:116 - Query returned 1 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 16:29:11.073 | DEBUG    | retrieval.generator:generate_answer:60 - Sending 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://54.242.118.11:11434
+2026-10-13 16:31:11.147 | ERROR    | retrieval.generator:generate_answer:81 - Cannot connect to Ollama at http://54.242.118.11:11434
+2026-10-13 16:37:43.996 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is my number of casual leaves?'
+2026-10-13 16:37:44.027 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 16:37:44.049 | INFO     | retrieval.retriever:search:116 - Query returned 1 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 16:37:44.073 | DEBUG    | retrieval.generator:generate_answer:60 - Sending 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://54.242.118.11:11434
+2026-10-13 16:38:20.474 | ERROR    | retrieval.generator:generate_answer:81 - Cannot connect to Ollama at http://54.242.118.11:11434
+2026-10-13 16:40:20.357 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is my number of casual leaves?'
+2026-10-13 16:40:20.389 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 16:40:20.402 | INFO     | retrieval.retriever:search:116 - Query returned 1 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 16:40:20.403 | DEBUG    | retrieval.generator:generate_answer:60 - Sending 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://54.242.118.11:11434
+2026-10-13 16:40:59.509 | INFO     | retrieval.generator:generate_answer:92 - Generated answer (87 chars) via llama3.2:3b-instruct-q4_K_M
+2026-10-13 16:42:22.608 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the resignation processs?'
+2026-10-13 16:42:22.639 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 16:42:22.655 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 16:42:22.656 | DEBUG    | retrieval.generator:generate_answer:60 - Sending 5 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://54.242.118.11:11434
+2026-10-13 16:44:23.058 | ERROR    | retrieval.generator:generate_answer:85 - Ollama request timed out after 120s
+2026-10-13 16:48:51.312 | INFO     | api:query:62 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the resignation processs?'
+2026-10-13 16:48:51.340 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-13 16:48:51.352 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-13 16:48:51.353 | DEBUG    | retrieval.generator:generate_answer:60 - Sending 5 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://54.242.118.11:11434
+2026-10-13 16:50:33.687 | INFO     | retrieval.generator:generate_answer:92 - Generated answer (511 chars) via llama3.2:3b-instruct-q4_K_M
