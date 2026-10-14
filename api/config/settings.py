@@ -19,9 +19,11 @@ class Settings:
     # OpenAI
     #openai_api_key: str = field(default_factory=lambda: os.environ["OPENAI_API_KEY"])
     gemini_api_key: str = field(default_factory=lambda: os.environ["GEMINI_API_KEY"])
-
+    groq_api_key_key: str = field(default_factory=lambda: os.environ["GROQ_API_KEY"])
+    redis_url: str = field(default_factory=lambda: os.getenv("REDIS_URL", "redis://localhost:6379"))
+    redis_cache_ttl: int = field(default_factory=lambda: int(os.getenv("REDIS_CACHE_TTL", "3600")))
     # Qdrant
-    qdrant_url: str = field(default_factory=lambda: os.getenv("QDRANT_URL", "http://98.82.167.144:6333"))
+    qdrant_url: str = field(default_factory=lambda: os.getenv("QDRANT_URL", "http://localhost:6333"))
     qdrant_api_key: str | None = field(default_factory=lambda: os.getenv("QDRANT_API_KEY"))
     qdrant_collection: str = field(default_factory=lambda: os.getenv("QDRANT_COLLECTION", "hr_docs"))
 

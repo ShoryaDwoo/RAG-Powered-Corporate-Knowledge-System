@@ -1,0 +1,14 @@
+2026-10-14 15:48:17.149 | INFO     | __main__:main:33 - Single-document ingest: employee_self_service_portal_directory.md
+2026-10-14 15:48:17.184 | DEBUG    | ingestion.qdrant_store:ensure_collection:87 - Collection 'hr_docs' already exists — skipping creation
+2026-10-14 15:48:17.184 | ERROR    | ingestion.pipeline:ingest_single_document:115 - Single ingest failed for employee_self_service_portal_directory.md: 'Settings' object has no attribute 'aws_access_key_id'
+2026-10-14 15:48:17.184 | ERROR    | __main__:main:36 - Failed: 'Settings' object has no attribute 'aws_access_key_id'
+2026-10-14 15:53:10.436 | INFO     | __main__:main:33 - Single-document ingest: employee_self_service_portal_directory.md
+2026-10-14 15:53:10.466 | DEBUG    | ingestion.qdrant_store:ensure_collection:87 - Collection 'hr_docs' already exists — skipping creation
+2026-10-14 15:53:11.557 | WARNING  | ingestion.s3_loader:_resolve_role:42 - Unknown prefix for key 'employee_self_service_portal_directory.md' — defaulting to HR-Admin
+2026-10-14 15:53:11.563 | INFO     | chunkers.markdown_chunker:chunk_markdown:84 - employee_self_service_portal_directory.md: 41 markdown chunks produced
+2026-10-14 15:53:11.564 | DEBUG    | ingestion.embedder:embed_texts:87 - Embedding batch 1 (41 texts)…
+2026-10-14 15:53:12.113 | INFO     | ingestion.embedder:embed_texts:102 - Embedded 41 texts
+2026-10-14 15:53:12.160 | DEBUG    | ingestion.qdrant_store:upsert_chunks:133 - Upserted batch 1 (41 points)
+2026-10-14 15:53:12.160 | INFO     | ingestion.qdrant_store:upsert_chunks:135 - Total upserted: 41 points into 'hr_docs'
+2026-10-14 15:53:12.160 | INFO     | ingestion.pipeline:ingest_single_document:111 - Single ingest done: employee_self_service_portal_directory.md → 41 chunks
+2026-10-14 15:53:12.161 | INFO     | __main__:main:38 - Done: 41 chunks ingested

@@ -126,3 +126,130 @@
 2026-10-13 16:48:51.352 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
 2026-10-13 16:48:51.353 | DEBUG    | retrieval.generator:generate_answer:60 - Sending 5 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://54.242.118.11:11434
 2026-10-13 16:50:33.687 | INFO     | retrieval.generator:generate_answer:92 - Generated answer (511 chars) via llama3.2:3b-instruct-q4_K_M
+2026-10-14 14:47:57.812 | INFO     | api:query:76 - /query | employee_id=EMP001 | role=HR-Admin | question='What is the leave policy?'
+2026-10-14 14:47:57.845 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 14:47:57.959 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 14:47:57.960 | DEBUG    | retrieval.generator:generate_answer:60 - Sending 5 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 14:48:06.225 | ERROR    | retrieval.generator:generate_answer:81 - Cannot connect to Ollama at http://3.94.201.150:11434
+2026-10-14 14:55:50.992 | INFO     | api:query:76 - /query | employee_id=EMP001 | role=HR-Admin | question='what should be the password length?'
+2026-10-14 14:55:51.047 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 14:55:51.069 | INFO     | retrieval.retriever:search:116 - Query returned 2 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 14:55:51.070 | DEBUG    | retrieval.generator:generate_answer:60 - Sending 2 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 14:57:27.926 | INFO     | retrieval.generator:generate_answer:92 - Generated answer (194 chars) via llama3.2:3b-instruct-q4_K_M
+2026-10-14 15:07:41.243 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='how leaves i have'
+2026-10-14 15:07:41.274 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:07:41.297 | INFO     | retrieval.retriever:search:116 - Query returned 1 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:07:41.298 | INFO     | api:_get_results:85 - Top result | score=0.4286 | source=09_Employee_FAQ.md
+2026-10-14 15:07:41.313 | DEBUG    | retrieval.generator:generate_answer_stream:132 - Streaming 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 15:08:41.755 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='what are my yearly leaves ?'
+2026-10-14 15:08:41.796 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:08:41.812 | INFO     | retrieval.retriever:search:116 - Query returned 2 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:08:41.813 | INFO     | api:_get_results:85 - Top result | score=0.5498 | source=09_Employee_FAQ.md
+2026-10-14 15:08:41.813 | DEBUG    | retrieval.generator:generate_answer_stream:132 - Streaming 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 15:09:52.371 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='where can i apply for leave ?'
+2026-10-14 15:09:52.413 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:09:52.437 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:09:52.438 | INFO     | api:_get_results:85 - Top result | score=0.4774 | source=09_Employee_FAQ.md
+2026-10-14 15:09:52.438 | DEBUG    | retrieval.generator:generate_answer_stream:132 - Streaming 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 15:13:00.892 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='how to apply of leave?'
+2026-10-14 15:13:00.930 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:13:00.943 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:13:00.944 | INFO     | api:_get_results:85 - Top result | score=0.5413 | source=09_Employee_FAQ.md
+2026-10-14 15:13:00.945 | DEBUG    | retrieval.generator:generate_answer_stream:132 - Streaming 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 15:13:55.265 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='how can i contact to It team ?'
+2026-10-14 15:13:55.307 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:13:55.324 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:13:55.325 | INFO     | api:_get_results:85 - Top result | score=0.5773 | source=10_HR_Contacts_Directory.csv
+2026-10-14 15:13:55.326 | DEBUG    | retrieval.generator:generate_answer_stream:132 - Streaming 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 15:14:36.770 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='how can i apply for resignation'
+2026-10-14 15:14:36.814 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:14:36.830 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:14:36.830 | INFO     | api:_get_results:85 - Top result | score=0.6047 | source=06_Exit_Separation_Policy.pdf
+2026-10-14 15:14:36.831 | DEBUG    | retrieval.generator:generate_answer_stream:132 - Streaming 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 15:15:24.249 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='When is salary credited?'
+2026-10-14 15:15:24.284 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:15:24.300 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:15:24.300 | INFO     | api:_get_results:85 - Top result | score=0.7246 | source=02_Payroll_Compensation_Benefits_Policy.pdf
+2026-10-14 15:15:24.301 | DEBUG    | retrieval.generator:generate_answer_stream:132 - Streaming 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 15:29:16.062 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='What is the leave policy?'
+2026-10-14 15:29:16.097 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:29:16.119 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:29:16.119 | INFO     | api:_get_results:85 - Top result | score=0.5513 | source=06_Exit_Separation_Policy.pdf
+2026-10-14 15:29:16.134 | DEBUG    | retrieval.generator:generate_answer_stream:152 - Streaming 1 chunks via Groq 'llama-3.1-8b-instant'
+2026-10-14 15:29:16.363 | WARNING  | retrieval.generator:generate_answer_stream:170 - Groq stream failed (Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}) — falling back to Ollama
+2026-10-14 15:31:57.782 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='What is the leave policy?'
+2026-10-14 15:31:57.809 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:31:57.828 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:31:57.829 | INFO     | api:_get_results:85 - Top result | score=0.5513 | source=06_Exit_Separation_Policy.pdf
+2026-10-14 15:31:57.844 | DEBUG    | retrieval.generator:generate_answer_stream:132 - Streaming 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 15:32:35.337 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='What is the leave policy?'
+2026-10-14 15:32:35.375 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:32:35.386 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:32:35.387 | INFO     | api:_get_results:85 - Top result | score=0.5513 | source=06_Exit_Separation_Policy.pdf
+2026-10-14 15:32:35.387 | DEBUG    | retrieval.generator:generate_answer_stream:132 - Streaming 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 15:35:06.264 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='how can i contact with Hr'
+2026-10-14 15:35:06.296 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:35:06.314 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:35:06.315 | INFO     | api:_get_results:85 - Top result | score=0.6045 | source=10_HR_Contacts_Directory.csv
+2026-10-14 15:35:06.327 | DEBUG    | retrieval.generator:generate_answer_stream:132 - Streaming 1 chunks to Ollama 'llama3.2:3b-instruct-q4_K_M' at http://3.94.201.150:11434
+2026-10-14 15:36:14.003 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='What is the minimum password length?'
+2026-10-14 15:36:14.030 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:36:14.048 | INFO     | retrieval.retriever:search:116 - Query returned 3 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:36:14.049 | INFO     | api:_get_results:85 - Top result | score=0.5252 | source=08_IT_and_Information_Security_Policy.txt
+2026-10-14 15:36:14.059 | DEBUG    | retrieval.generator:generate_answer_stream:152 - Streaming 1 chunks via Groq 'llama-3.1-8b-instant'
+2026-10-14 15:36:14.308 | WARNING  | retrieval.generator:generate_answer_stream:170 - Groq stream failed (Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}) — falling back to Ollama
+2026-10-14 15:37:19.209 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='where can i apply for leave'
+2026-10-14 15:37:19.249 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:37:19.261 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:37:19.262 | INFO     | api:_get_results:85 - Top result | score=0.4804 | source=09_Employee_FAQ.md
+2026-10-14 15:37:19.262 | DEBUG    | retrieval.generator:generate_answer_stream:152 - Streaming 1 chunks via Groq 'llama-3.1-8b-instant'
+2026-10-14 15:37:19.433 | WARNING  | retrieval.generator:generate_answer_stream:170 - Groq stream failed (Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}) — falling back to Ollama
+2026-10-14 15:37:51.507 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='can you navigate me to apply for leavy'
+2026-10-14 15:37:51.551 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:37:51.568 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:37:51.569 | INFO     | api:_get_results:85 - Top result | score=0.4099 | source=06_Exit_Separation_Policy.pdf
+2026-10-14 15:37:51.569 | DEBUG    | retrieval.generator:generate_answer_stream:152 - Streaming 1 chunks via Groq 'llama-3.1-8b-instant'
+2026-10-14 15:37:51.790 | WARNING  | retrieval.generator:generate_answer_stream:170 - Groq stream failed (Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}) — falling back to Ollama
+2026-10-14 15:56:23.285 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='where can i apply for leave'
+2026-10-14 15:56:23.316 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:56:23.335 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:56:23.335 | INFO     | api:_get_results:85 - Top result | score=0.5718 | source=employee_self_service_portal_directory.md
+2026-10-14 15:56:23.352 | DEBUG    | retrieval.generator:generate_answer_stream:181 - Groq stream | 1 chunks | model=llama-3.1-8b-instant
+2026-10-14 15:56:23.603 | WARNING  | retrieval.generator:generate_answer_stream:200 - Groq stream failed (Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}) — falling back to Ollama
+2026-10-14 15:56:52.172 | INFO     | retrieval.generator:_set_cache:64 - Cache SET: hr_rag:ab4bdee82076a61878eeefca5f2ab1ff (TTL=3600s)
+2026-10-14 15:57:23.539 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='how can i see my allocation'
+2026-10-14 15:57:23.582 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:57:23.597 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:57:23.597 | INFO     | api:_get_results:85 - Top result | score=0.5709 | source=employee_self_service_portal_directory.md
+2026-10-14 15:57:23.598 | DEBUG    | retrieval.generator:generate_answer_stream:181 - Groq stream | 1 chunks | model=llama-3.1-8b-instant
+2026-10-14 15:57:23.820 | WARNING  | retrieval.generator:generate_answer_stream:200 - Groq stream failed (Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}) — falling back to Ollama
+2026-10-14 15:57:37.285 | INFO     | retrieval.generator:_set_cache:64 - Cache SET: hr_rag:761de9eea67a32f341fe39a8876d8dd1 (TTL=3600s)
+2026-10-14 15:57:49.102 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='i want to rase a ticket'
+2026-10-14 15:57:49.142 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:57:49.158 | INFO     | retrieval.retriever:search:116 - Query returned 3 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:57:49.158 | INFO     | api:_get_results:85 - Top result | score=0.4074 | source=employee_self_service_portal_directory.md
+2026-10-14 15:57:49.159 | DEBUG    | retrieval.generator:generate_answer_stream:181 - Groq stream | 1 chunks | model=llama-3.1-8b-instant
+2026-10-14 15:57:49.379 | WARNING  | retrieval.generator:generate_answer_stream:200 - Groq stream failed (Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}) — falling back to Ollama
+2026-10-14 15:58:00.986 | INFO     | retrieval.generator:_set_cache:64 - Cache SET: hr_rag:fa299ba8cae2e3cba5c1ddea1220f929 (TTL=3600s)
+2026-10-14 15:58:07.626 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='thanks'
+2026-10-14 15:58:07.658 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:58:07.692 | INFO     | retrieval.retriever:search:116 - Query returned 0 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:58:21.995 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='how can i apply for leave'
+2026-10-14 15:58:22.034 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 15:58:22.049 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 15:58:22.050 | INFO     | api:_get_results:85 - Top result | score=0.6597 | source=employee_self_service_portal_directory.md
+2026-10-14 15:58:22.051 | DEBUG    | retrieval.generator:generate_answer_stream:181 - Groq stream | 1 chunks | model=llama-3.1-8b-instant
+2026-10-14 15:58:22.257 | WARNING  | retrieval.generator:generate_answer_stream:200 - Groq stream failed (Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}) — falling back to Ollama
+2026-10-14 15:59:01.923 | INFO     | retrieval.generator:_set_cache:64 - Cache SET: hr_rag:f1856ef7f02c6199e167bd5f55803603 (TTL=3600s)
+2026-10-14 16:12:19.513 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='how can i apply for leave'
+2026-10-14 16:12:19.602 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 16:12:19.667 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 16:12:19.668 | INFO     | api:_get_results:85 - Top result | score=0.6597 | source=employee_self_service_portal_directory.md
+2026-10-14 16:12:19.672 | INFO     | retrieval.generator:_get_cache:54 - Cache HIT: hr_rag:f1856ef7f02c6199e167bd5f55803603
+2026-10-14 16:12:34.786 | INFO     | api:query_stream:109 - /query/stream | employee_id=EMP001 | role=HR-Admin | question='i want to contact to It team'
+2026-10-14 16:12:34.864 | DEBUG    | retrieval.retriever:search:69 - Role 'HR-Admin' → allowed roles: ['HR-Admin', 'Finance', 'General-Staff', 'Public']
+2026-10-14 16:12:34.977 | INFO     | retrieval.retriever:search:116 - Query returned 5 results for role 'HR-Admin' (allowed: ['HR-Admin', 'Finance', 'General-Staff', 'Public'])
+2026-10-14 16:12:34.978 | INFO     | api:_get_results:85 - Top result | score=0.5936 | source=10_HR_Contacts_Directory.csv
+2026-10-14 16:12:34.981 | DEBUG    | retrieval.generator:generate_answer_stream:181 - Groq stream | 1 chunks | model=llama-3.1-8b-instant
+2026-10-14 16:12:35.231 | WARNING  | retrieval.generator:generate_answer_stream:200 - Groq stream failed (Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}) — falling back to Ollama
+2026-10-14 16:13:01.872 | INFO     | retrieval.generator:_set_cache:64 - Cache SET: hr_rag:9107d0c6aed7d606d9ef978537762d8b (TTL=3600s)

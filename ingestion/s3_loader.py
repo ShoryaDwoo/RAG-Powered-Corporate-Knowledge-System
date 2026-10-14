@@ -99,11 +99,7 @@ def fetch_single(key: str) -> tuple[bytes, str, str]:
         (raw_bytes, access_role, etag)
     """
     s3 = boto3.client(
-        "s3",
-        aws_access_key_id=cfg.aws_access_key_id,
-        aws_secret_access_key=cfg.aws_secret_access_key,
-        region_name=cfg.aws_region,
-    )
+        "s3")
     response = s3.get_object(Bucket=cfg.s3_bucket, Key=key)
     raw = response["Body"].read()
     etag = response.get("ETag", "").strip('"')
